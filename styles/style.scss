@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root{
+    --Primary-color:#DF6951;
+    --Secondary-color:#F1A501;
+    --Heading-color:#14183E;
+    --Text-color:#5E6282;
+    --Card-heading-color:#1E1D4C;
+    --Bg-color:white;
+    --Nav-item-color:#212832;
+    --header-font:"Volkhov", serif;
+}
+
+*{
+    padding:0;
+    margin:0;
+font-family: "Inter", sans-serif;
+box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+@mixin container-width(){
+ width:80%;
+    position: relative;
+     left: calc(50% - 40%);
+}
+
+#deco{
+    width:680px ;
+    position: absolute;
+    top: -110px;
+    right: -70px;
+}
+
+#eli{
+  position: absolute;
+    top: -400px;
+    left: -300px;  
+}
+
+
+.header{
+    width:100%;
+    position:relative;
+    padding:30px 0;
+
+.nav-bar{
+   @include container-width();
+     display:flex;
+     justify-content: center;
+     align-items: center;
+   
+}
+  
+    #logo{
+        width:70px;
+        position: absolute;
+        left: 0;
+    }
+
+    nav{
+        display: flex;
+        gap: 60px;
+
+        a{
+            text-decoration: none;
+            color:var(--Nav-item-color);
+        }
+    }
+
+    .btns{
+        position: absolute;
+        right: 0;
+        display: flex;
+        gap:20px;
+        align-items: center;
+      
+
+        button{
+padding: 10px;
+width: 100px;
+  background-color: transparent;
+   border-radius: 5px;
+        }
+
+        #login{
+            border: none;
+           
+        }
+
+        #sign-up{
+            border: 1px solid var(--Nav-item-color);
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+}
