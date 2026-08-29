@@ -52,12 +52,32 @@ body{
     width:100%;
     position:relative;
     padding:30px 0;
+    background-color: rgba(255, 255, 255,0.4);
+    backdrop-filter: blur(15px);
+    position:sticky;
+    top:0;
+    z-index: 100;
 
 .nav-bar{
    @include container-width();
      display:flex;
      justify-content: center;
      align-items: center;
+
+     .bugger{
+        width: 40px;
+        height: 40px;
+        border-radius:10px;
+        border:1px solid var(--Primary-color);
+        display: none;
+        justify-content: center;
+        align-items:center;
+
+        i{
+           font-size: 24px;
+           color: var(--Primary-color);
+        }
+     }
    
 }
   
@@ -110,15 +130,13 @@ width: 90px;
 
 #hero{
     width:100%;
-    height: 92vh;
+    height: auto;
    
     position: relative;
 
     .hero-holder{
-        width: 80%;
-        height: 92vh;
-        position: inherit;
-        left:calc(50% - 40%);
+       @include container-width();
+        height: auto;
         display: grid;
         grid-template-columns: 50% 50%;
 
@@ -189,5 +207,166 @@ width: 90px;
                 height: 600px;
             }
         }
+    }
+}
+
+#category{
+      width:100%;
+    position: relative;
+    margin-top: 50px;
+
+    .category-holder{
+        @include container-width();
+        text-align: center;
+
+        h5{
+            color:var(--Text-color);
+          
+        }
+
+        h1{
+              font-family: var(--header-font);
+              color: var(--Card-heading-color);
+        }
+
+        .row{
+            margin-top:50px;
+            display:grid;
+            grid-template-columns:25% 25% 25% 25% ;
+
+            .col{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+
+                &:hover{
+                    
+                    .card{
+                        transition: 0.5s;
+                        box-shadow: 25px 25px 25px rgba(201, 204, 228, 0.2);
+                    }
+
+                    .shape{
+                        background-color:#DF6951;
+                          transition: 0.5s;
+                    }
+                }
+
+                .shape{
+                    width:80px;
+                    height: 75px;
+                    background-color: transparent;
+                    border-radius: 22px 22px 10px 4px;
+                    position: absolute;
+                    bottom: -25px;
+                    left: 0;
+                      transition: 0.5s;
+                }
+
+                .card{
+                    transition: 0.5s;
+                    width:80%;
+                    padding:35px;
+                    border-radius: 25px;
+                    background-color: white;
+                    z-index: 10;
+
+                    img{
+                        width:60px;
+                    }
+                    h4{
+                        color: var(--Card-heading-color);
+                        font-weight: bold;
+                        margin-top: 15px;
+                    }
+                    p{
+                        color:var(--Text-color);
+                        font-size: 14px;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:800px){
+
+    #deco{
+   display: none;
+    }
+
+    .header{
+        .nav-bar{
+            width: 90%;
+              left: calc(50% - 45%);
+            .bugger{
+                display:flex;
+                position:absolute;
+                right:0;
+            }
+        }
+
+        nav{
+            display: none;
+        }
+
+        .btns{
+            display: none;
+        }
+    }
+
+    #hero{
+     height: auto;
+.hero-holder{
+     width: 90%;
+              left: calc(50% - 45%);
+              display: block;
+               height: auto;
+
+              .col-1{
+                h5{
+                    margin-top:40px;
+                }
+
+                h1{
+                    font-size:50px;
+                      line-height: 55px;
+                      margin-top:10px;
+                }
+
+                p{
+                    padding-top: 20px;
+                }
+              }
+
+              .col-2{
+                justify-content: center;
+                align-items: center;
+                margin-top:50px ;
+
+                img{
+                    width:400px;
+                    height:400px;
+                    
+                }
+              }
+}
+    }
+
+    #category{
+        .category-holder{
+ .row{
+            display: block;
+
+            .col{
+                margin-top:30px;
+            }
+        }
+        }
+       
     }
 }
