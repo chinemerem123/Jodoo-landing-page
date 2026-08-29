@@ -123,6 +123,7 @@ width: 90px;
 
         a{
             text-decoration: none;
+            color: var(--Nav-item-color);
         }
     }
 
@@ -214,10 +215,17 @@ width: 90px;
       width:100%;
     position: relative;
     margin-top: 50px;
+    height: auto;
 
     .category-holder{
         @include container-width();
         text-align: center;
+        height: auto;
+
+        #stars{
+            position: absolute;
+            right:0;
+        }
 
         h5{
             color:var(--Text-color);
@@ -290,6 +298,27 @@ width: 90px;
             }
         }
 
+    }
+}
+
+#destination{
+    width:100%;
+    height: auto;
+    position: relative;
+    margin-top:70px;
+
+    .destination-holder{
+        @include container-width();
+        text-align: center;
+
+        h5{
+            color:var(--Text-color);
+        }
+
+        h1{
+            font-family: var(--header-font);
+            color:var(--Heading-color);
+        }
     }
 }
 
