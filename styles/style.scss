@@ -378,6 +378,83 @@ width: 90px;
     }
 }
 
+#book{
+     width:100%;
+    position: relative;
+    margin-top: 50px;
+    height: auto;
+
+    .book-holder{
+        @include container-width();
+
+        .row{
+            width: 100%;
+            position: relative;
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            #col{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                 img{
+                    width:400px;
+                   
+                }
+
+            }
+
+            .col{
+                width: 100%;
+                position: relative;
+
+               
+                h5{
+                    color: var(--Text-color);
+                }
+
+                h1{
+                    font-family: var(--header-font);
+                    color: var(--Heading-color);
+                    margin-top: 12px;
+                    line-height: 35px;
+                }
+
+                .card{
+                    display:flex;
+                    position: relative;
+                    width: 100%;
+                    margin-top:25px;
+                    gap: 10px;
+                   align-items: center;
+                    .icon-holder{
+                        color: white;
+                        width: 40px;
+                        height:40px;
+                        border-radius: 8px;
+                        background-color: var(--Secondary-color);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .text-hold{
+                        h6{
+                            color:var(--Text-color);
+                        }
+                        p{
+                            font-size:12px;
+                             color:var(--Text-color);
+                             padding-top: 5px;
+                        }
+                    }
+                }
+
+            }
+        }
+}
+}
+
 
 @media screen and (max-width:800px){
 
@@ -445,6 +522,8 @@ width: 90px;
 
     #category{
         .category-holder{
+              width: 90%;
+              left: calc(50% - 45%);
             h1{
                 font-size:20px;
             }
@@ -463,6 +542,8 @@ width: 90px;
           margin-top:50px;
 
           .destination-holder{
+              width: 90%;
+              left: calc(50% - 45%);
 .row{
     display: block;
     margin-top: 30px;
@@ -476,5 +557,15 @@ width: 90px;
     }
 }
           }
+    }
+
+    #book{
+        .book-holder{
+              width: 90%;
+              left: calc(50% - 45%);
+            .row{
+                display: block;
+            }
+        }
     }
 }

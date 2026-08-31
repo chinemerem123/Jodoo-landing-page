@@ -320,6 +320,71 @@ body {
   margin-top: 12px;
 }
 
+#book {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+  height: auto;
+}
+#book .book-holder {
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+#book .book-holder .row {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#book .book-holder .row #col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#book .book-holder .row #col img {
+  width: 400px;
+}
+#book .book-holder .row .col {
+  width: 100%;
+  position: relative;
+}
+#book .book-holder .row .col h5 {
+  color: var(--Text-color);
+}
+#book .book-holder .row .col h1 {
+  font-family: var(--header-font);
+  color: var(--Heading-color);
+  margin-top: 12px;
+  line-height: 35px;
+}
+#book .book-holder .row .col .card {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+  gap: 10px;
+  align-items: center;
+}
+#book .book-holder .row .col .card .icon-holder {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--Secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#book .book-holder .row .col .card .text-hold h6 {
+  color: var(--Text-color);
+}
+#book .book-holder .row .col .card .text-hold p {
+  font-size: 12px;
+  color: var(--Text-color);
+  padding-top: 5px;
+}
+
 @media screen and (max-width: 800px) {
   #deco {
     display: none;
@@ -368,6 +433,10 @@ body {
     width: 400px;
     height: 400px;
   }
+  #category .category-holder {
+    width: 90%;
+    left: 5%;
+  }
   #category .category-holder h1 {
     font-size: 20px;
   }
@@ -380,6 +449,10 @@ body {
   #destination {
     margin-top: 50px;
   }
+  #destination .destination-holder {
+    width: 90%;
+    left: 5%;
+  }
   #destination .destination-holder .row {
     display: block;
     margin-top: 30px;
@@ -389,5 +462,12 @@ body {
   }
   #destination .destination-holder .row .col .card {
     width: 100%;
+  }
+  #book .book-holder {
+    width: 90%;
+    left: 5%;
+  }
+  #book .book-holder .row {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
