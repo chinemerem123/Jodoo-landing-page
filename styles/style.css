@@ -462,6 +462,7 @@ body {
   }
   #destination .destination-holder .row .col .card {
     width: 100%;
+    left: 0%;
   }
   #book .book-holder {
     width: 90%;
@@ -469,5 +470,8 @@ body {
   }
   #book .book-holder .row {
     display: block;
+  }
+  #book .book-holder .row #col img {
+    width: 420px;
   }
 }/*# sourceMappingURL=style.css.map */

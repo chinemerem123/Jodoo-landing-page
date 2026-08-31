@@ -522,7 +522,7 @@ width: 90px;
 
     #category{
         .category-holder{
-              width: 90%;
+             width: 90%;
               left: calc(50% - 45%);
             h1{
                 font-size:20px;
@@ -542,7 +542,7 @@ width: 90px;
           margin-top:50px;
 
           .destination-holder{
-              width: 90%;
+             width: 90%;
               left: calc(50% - 45%);
 .row{
     display: block;
@@ -553,6 +553,7 @@ width: 90px;
 
         .card{
             width: 100%;
+             left: calc(50% - 50%);
         }
     }
 }
@@ -561,10 +562,16 @@ width: 90px;
 
     #book{
         .book-holder{
-              width: 90%;
+             width: 90%;
               left: calc(50% - 45%);
             .row{
                 display: block;
+
+                #col{
+                    img{
+                        width:420px;
+                    }
+                }
             }
         }
     }
