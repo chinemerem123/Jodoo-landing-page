@@ -406,6 +406,73 @@ body {
   width: 100px;
 }
 
+#CTA {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+  height: auto;
+}
+#CTA .cta-holder {
+  position: relative;
+  width: 80%;
+  left: 10%;
+  padding: 40px;
+  background-color: #f2eeff;
+  text-align: center;
+  border-radius: 80px 20px 20px 20px;
+  overflow: hidden;
+}
+#CTA .cta-holder #mask2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+}
+#CTA .cta-holder #mask1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+}
+#CTA .cta-holder h3 {
+  color: var(--Text-color);
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+#CTA .cta-holder .md {
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+#CTA .cta-holder .md .input-holder {
+  display: flex;
+  width: 300px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  color: var(--Text-color);
+  gap: 12px;
+  justify-content: center;
+}
+#CTA .cta-holder .md .input-holder input {
+  border: None;
+  outline: none;
+  width: 100%;
+}
+#CTA .cta-holder .md button {
+  background-color: var(--Primary-color);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  width: 150px;
+}
+
 @media screen and (max-width: 800px) {
   #deco {
     display: none;
@@ -494,5 +561,20 @@ body {
   }
   #book .book-holder .row #col img {
     width: 420px;
+  }
+  #CTA .cta-holder {
+    width: 90%;
+    left: 5%;
+    padding: 40px;
+  }
+  #CTA .cta-holder .md {
+    display: block;
+  }
+  #CTA .cta-holder .md button {
+    width: 100%;
+    margin-top: 12px;
+  }
+  #CTA .cta-holder .md .input-holder {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
