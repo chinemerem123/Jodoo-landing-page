@@ -385,6 +385,27 @@ body {
   padding-top: 5px;
 }
 
+#brand {
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+  height: auto;
+}
+#brand .brand-holder {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#brand .brand-holder marquee a {
+  margin-left: 30px;
+}
+#brand .brand-holder marquee a img {
+  width: 100px;
+}
+
 @media screen and (max-width: 800px) {
   #deco {
     display: none;

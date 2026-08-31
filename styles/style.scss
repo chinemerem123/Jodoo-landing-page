@@ -455,6 +455,31 @@ width: 90px;
 }
 }
 
+#brand{
+     width:100%;
+    position: relative;
+    margin-top: 60px;
+    height: auto;
+
+    .brand-holder{
+        @include container-width();
+display: flex;
+        justify-content: center;
+        align-items: center;
+        marquee{
+   
+        a{
+        margin-left: 30px;
+            img{
+                width: 100px;
+            }
+        }
+
+        }
+     
+    }
+}
+
 
 @media screen and (max-width:800px){
 
